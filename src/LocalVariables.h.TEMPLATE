@@ -1,0 +1,12 @@
+#include <Arduino.h>
+
+#define STASSID "MyWiFiSSID"
+#define STAPSK  "MyWiFiPassword"
+#define MESSAGE "TESTING message"
+#define HOST "MyHaControllerHost"
+#define PORT 8070
+
+const char* ssid     = STASSID;
+const char* password = STAPSK;
+const char host[] = HOST;
+const uint16_t port = PORT;

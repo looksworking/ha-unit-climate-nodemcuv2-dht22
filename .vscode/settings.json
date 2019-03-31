@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.env.linux": {
+        "PATH": "/home/me/.platformio/penv/bin:/home/me/.platformio/penv:/home/me/bin:/home/linuxbrew/.linuxbrew/bin:/home/me/bin:/home/me/.platformio/penv/bin:/home/me/.sdkman/candidates/java/current/bin:/home/me/bin:/home/linuxbrew/.linuxbrew/bin:/home/me/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin",
+        "PLATFORMIO_CALLER": "vscode"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
