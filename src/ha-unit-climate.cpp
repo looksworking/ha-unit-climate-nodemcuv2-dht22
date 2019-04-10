@@ -53,6 +53,7 @@ void udpSend() {
 
 void getJson(const char *status, float humidity, float temperature) {
     StaticJsonDocument<200> doc;
+    doc["id"] = id;
     doc["status"] = status;
     doc["humidity"] = humidity;
     doc["temperature"] = temperature;

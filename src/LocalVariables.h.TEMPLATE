@@ -2,7 +2,7 @@
 
 #define STASSID "MyWiFiSSID"
 #define STAPSK  "MyWiFiPassword"
-#define MESSAGE "TESTING message"
+#define ID "8a114896-58de-44dc-b953-afac7ae69dd5"
 #define HOST "MyHaControllerHost"
 #define PORT 8070
 
@@ -10,3 +10,4 @@ const char* ssid     = STASSID;
 const char* password = STAPSK;
 const char host[] = HOST;
 const uint16_t port = PORT;
+const char* id = ID;
