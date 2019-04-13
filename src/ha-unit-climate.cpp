@@ -8,7 +8,7 @@
 
 DHTesp dht;
 WiFiUDP udpClient;
-char jsonChar[100];
+char jsonChar[200];
 
 void udpSend();
 void getJson(const char *status, float humidity, float temperature);
@@ -39,7 +39,7 @@ void loop() {
         delay(dht.getMinimumSamplingPeriod());
         getJson(dht.getStatusString(), dht.getHumidity(), dht.getTemperature());
         udpSend();
-        delay(60000);
+        delay(sleep);
     }
 }
 
@@ -53,11 +53,11 @@ void udpSend() {
 
 void getJson(const char *status, float humidity, float temperature) {
     StaticJsonDocument<200> doc;
-    doc["id"] = id;
+    doc["unit"] = id;
     doc["status"] = status;
     doc["humidity"] = humidity;
     doc["temperature"] = temperature;
     serializeJson(doc, jsonChar);
-    Serial.println("JSON data:");
+    Serial.println("JSON data: ");
     Serial.println(jsonChar);
 }
